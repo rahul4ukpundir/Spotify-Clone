@@ -1,0 +1,32 @@
+.songrow{
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    color:white;
+    margin-left: 20px;
+    padding: 20px;
+    cursor: pointer;
+    
+}
+
+.selected_song{
+    background-color: black;
+}
+
+.songrow>img{
+    height: 70px;
+}
+
+.songrow_info{
+    margin-left:20px;
+}
+
+.songrow_info>h1{
+  font-size: 16px;
+}
+
+.songrow_info>p{
+    font-size: 16px;
+    margin-top:3px;
+    color:gray
+  }

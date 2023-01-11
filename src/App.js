@@ -8,8 +8,9 @@ import { useDataLayerValue } from './contextAPI/DataLayer';
 const spotify = new SpotifyWebApi();
 
 function App() {
-   const [{token, user}, dispatch] = useDataLayerValue();
-  React.useEffect(() => {
+   const [{token, user, playLists}, dispatch] = useDataLayerValue();
+   
+   React.useEffect(() => {
     const hash = window.location.hash
     if (!token && hash) {
     const _token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1];
@@ -24,6 +25,24 @@ function App() {
           type: "SET_USER",
           user: user
         })
+      })
+
+      spotify.getUserPlaylists().then(playLists =>{
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playLists: playLists
+        })
+      })
+
+      spotify.getPlaylist("65NSuQK9kmvjTLWTODufGJ").then(response =>{
+        dispatch({
+          type: "SET_OLDSONGS",
+          songs: response
+        })
+      })
+
+      spotify.getTrack("7dbO1k9ryxPFJG0fvYBffu").then(response =>{
+       console.log("response", response)
       })
     } 
   }, [])

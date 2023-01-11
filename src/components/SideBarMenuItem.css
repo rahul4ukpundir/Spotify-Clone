@@ -1,0 +1,14 @@
+.sideBar_MenuItem{
+  display: flex;
+  align-items:center;
+  color:gray;
+  padding: 10px;
+}
+
+.sideBar_MenuItem:hover{
+  color:white
+}
+.sideBar_title{
+    margin-left:10px;
+   
+}

@@ -1,0 +1,44 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    color:white;
+    width: 100%;
+    padding: 20px;
+    background-color: #282828;
+    display: flex;
+   
+}
+
+.footer_left{
+    flex:.4;
+    display: flex;
+}
+
+.footer_center{
+    flex:.4
+}
+
+.footer_right{
+    flex:.2
+}
+
+.audio_player{
+    min-width: 500px !important
+}
+
+.footer_left>img{
+    height: 50px;
+}
+.album_info{
+    margin-left: 20px
+}
+.album_info>h1{
+    font-size: 14px;
+  }
+  
+  .album_info>p{
+      font-size: 12px;
+      margin-top:3px;
+      color:gray;
+    }
