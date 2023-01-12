@@ -1,70 +1,128 @@
-.body{
+.body {
     flex: 0.9;
     height: 100vh;
-    background: linear-gradient(rgb(91, 87,115), rgb(0,0,0,1));
-    padding:20px;
+    background: linear-gradient(rgb(91, 87, 115), rgb(0, 0, 0, 1));
+    padding: 20px;
     color: white;
     overflow-y: overlay;
- 
+
 }
-.body::-webkit-scrollbar{
-    display: none;;
+
+.body::-webkit-scrollbar {
+    display: none;
+    ;
 }
-.body_info{
+
+.body_info {
     display: flex;
     padding: 10px;
     align-items: flex-end;
 }
 
-.body_info>img{
+.body_info>img {
     height: 20vw;
     margin: 0 20px;
-    box-shadow: 0 4px 60px rgb(0,0,0,.5);
+    box-shadow: 0 4px 60px rgb(0, 0, 0, .5);
 }
 
-.body_info_text{
-   flex: 1;
-
-   
-}
-.body_info_text>h2{
-  font-size: 60px;
-  margin-bottom: 10px;
+.body_info_text {
+    flex: 1;
 }
 
-.body_info_text>p{
+.body_info_text>h2 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.body_info_text>p {
     font-size: 14px;
 }
 
-.body-info_footer_text{
+.body-info_footer_text {
     display: flex;
     align-items: center;
     font-size: 14px;
 }
 
-.body-info_footer_text>h4{
+.body-info_footer_text>h4 {
     margin-left: 10px;
-    font-size: 14px;;
+    font-size: 14px;
+    
 }
 
-.body_icons{
+.body_icons {
     display: flex;
     align-items: center;
 }
 
-.body_song_icon{
+.body_song_icon {
     margin-right: 10px;
 }
 
-.body_song_icon_big_button{
+.body_song_icon_big_button {
     margin-right: 10px;
     font-size: 80px !important;
-    margin-left:50px;
+    margin-left: 50px;
     margin-bottom: 20px;
     margin-top: 20px;
-    color:rgb(31, 232, 31)
+    color: rgb(31, 232, 31)
 }
 
-.body_songs{
+.body_songs {
     margin-bottom: 100px;
+}
+
+
+@media (max-width: 468px) {
+    .body {
+        padding: 8px;
+        overflow-y: overlay;
+        flex:1;
+    
+    }
+
+    .body_info {
+        padding: 1px;
+        align-items: flex-start;
+
+    }
+
+    .body_info>img {
+        height: 12vw;
+        margin-top: 15px;
+        box-shadow: 0 4px 20px rgb(0, 0, 0, .5);
+    }
+
+    .body_info_text>h2 {
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+
+    .body_song_icon_big_button {
+        margin-right: 2px;
+        font-size: 30px !important;
+        margin-left: 10px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        color: rgb(31, 232, 31)
+    }
+
+    .body_songs {
+        margin-bottom: 10px;
+    }
+
+    .body_info_text>p {
+        font-size: 8px;
+    }
+
+    .body-info_footer_text>h4 {
+        margin-left: 5px;
+        font-size: 8px;
+        
+    }
+
+    .user_image{
+        height: 30px !important;
+    }
+    
 }

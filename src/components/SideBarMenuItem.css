@@ -1,16 +1,30 @@
-.sideBar_MenuItem{
+.sideBar_MenuItem {
   display: flex;
-  align-items:center;
-  color:gray;
+  align-items: center;
+  color: gray;
   padding: 10px;
   font-size: 12px;
 }
 
-.sideBar_MenuItem:hover{
-  color:white
-}
-.sideBar_title{
-    margin-left:10px;
-   
+.sideBar_MenuItem:hover {
+  color: white
 }
 
+.sideBar_title {
+  margin-left: 10px;
+
+}
+
+
+
+@media (max-width: 468px) {
+  .sideBar_MenuItem {
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .sideBar_title {
+    margin-left: 5px;
+
+  }
+}

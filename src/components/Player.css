@@ -5,3 +5,7 @@
 .player_body{
     display: flex;
 }
+
+.player_map3{
+    background-color: white;
+}

@@ -7,7 +7,7 @@ import { Favorite, More, MoreHoriz, PlayCircleFilled, SmokingRoomsTwoTone } from
 import SongRow from './SongRow';
 const Body = () => {
   const [{ playLists, songs }, dispatch] = useDataLayerValue();
-  console.log("playlist", playLists)
+
 
   return (
     <div className='body'>
@@ -15,11 +15,11 @@ const Body = () => {
       <div className='body_info'>
         <img src="https://i.scdn.co/image/ab67706c0000bebb053d0eaa593f67736cf45c71" />
         <div className='body_info_text'>
-          <strong>PLAYLIST</strong>
+          <strong className='body_playlist'>PLAYLIST</strong>
           <h2>{playLists && playLists?.items?.[0].name}</h2>
           <p>{playLists && playLists?.items?.[0].description}</p>
           <div className='body-info_footer_text'>
-            <Avatar src="https://i.scdn.co/image/ab6775700000ee85b806d296bd523d66c136f0f8" />
+            <Avatar className='user_image' src="https://i.scdn.co/image/ab6775700000ee85b806d296bd523d66c136f0f8" />
             <h4>{playLists && playLists?.items?.[0]?.owner?.display_name} - 4 songs</h4>
           </div>
         </div>
@@ -33,8 +33,7 @@ const Body = () => {
         </div>
 
     {
-      songs && songs?.tracks?.items.map((item)=><SongRow track = {item.track}/>
-      )
+      songs && songs?.tracks?.items.map((item)=><SongRow track = {item.track} name = {item.track.name}/>)
     }
       </div>
 

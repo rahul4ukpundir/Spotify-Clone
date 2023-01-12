@@ -1,12 +1,11 @@
-import { Avatar } from '@material-ui/core';
-import { Search } from '@material-ui/icons'
+import { Avatar  } from '@material-ui/core';
+import { Search,MoreHoriz } from '@material-ui/icons'
 import React from 'react';
 import { useDataLayerValue } from '../contextAPI/DataLayer';
 import "./Header.css";
 
 const Header = () => {
     const [{user}, dispatch] = useDataLayerValue();
-    console.log(user)
   return (
     <div className='header'>
       <div className='header_left'>
@@ -18,7 +17,9 @@ const Header = () => {
        src ={user?.images?.[0]?.url}
       />
      <h4>{user?.display_name}</h4>
+   
       </div>
+      
     </div>
   )
 }

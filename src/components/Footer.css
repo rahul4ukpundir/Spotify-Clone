@@ -1,44 +1,94 @@
-.footer{
+.footer {
     position: fixed;
     bottom: 0;
     height: 50px;
-    color:white;
+    color: white;
     width: 100%;
     padding: 20px;
     background-color: #282828;
     display: flex;
-   
+
 }
 
-.footer_left{
-    flex:.4;
+
+
+
+.footer_left {
+    flex: .4;
     display: flex;
 }
 
-.footer_center{
-    flex:.4
+.footer_center {
+    flex: .4
 }
 
-.footer_right{
-    flex:.2
+.footer_right {
+    flex: .2
 }
 
-.audio_player{
+.audio_player {
     min-width: 500px !important
 }
 
-.footer_left>img{
+.footer_left>img {
     height: 50px;
 }
-.album_info{
+
+.album_info {
     margin-left: 20px
 }
-.album_info>h1{
+
+.album_info>h1 {
     font-size: 14px;
-  }
-  
-  .album_info>p{
-      font-size: 12px;
-      margin-top:3px;
-      color:gray;
+}
+
+.album_info>p {
+    font-size: 12px;
+    margin-top: 3px;
+    color: gray;
+}
+
+.footer-sidebar{
+    display: none;
+}
+
+@media (max-width: 468px) {
+    .footer {
+        width: 100%;
+        padding: 10px;
+        background-color: #282828;
+        display: flex;
+        height: 20px;
+
     }
+    .footer_left{
+        flex: 0;
+        display: none;
+    }
+
+
+    .footer_center {
+        flex: 1
+    }
+
+    .audio_player {
+        min-width: 200px !important;
+      
+    }
+
+    .react-audio-player.audio_player{
+        height: 40px !important;
+    }
+   
+    .footerForMP3 {
+        position: fixed;
+        bottom: 50px;
+        height: 20px;
+        color: white;
+        width: 100%;
+        padding: 20px;
+        background-color: black;
+        display: flex;
+    
+    }
+}

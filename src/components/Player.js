@@ -3,6 +3,7 @@ import SideBar from './SideBar';
 import Body from './Body';
 import "./Player.css";
 import Footer from './Footer';
+import ReactAudioPlayer from 'react-audio-player';
 const Player = () => {
   return (
     <div className='player'>

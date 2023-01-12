@@ -32,3 +32,33 @@
     margin-top:3px;
     color:gray
   }
+
+
+
+  @media (max-width: 468px){
+    
+    .songrow{
+        margin-left: 0px;
+        padding: 2px;
+        cursor: pointer;      
+    }
+    .songrow>img{
+        margin-left:0px;
+        height: 30px;
+    }
+    .songrow_info{
+        margin-left:8px;
+    }
+    
+    .songrow_info>h1{
+      font-size: 10px;
+    }
+
+    .songrow_info>p{
+        font-size: 8px;
+        margin-top:1px;
+        color:gray
+      }
+    
+    
+  }
