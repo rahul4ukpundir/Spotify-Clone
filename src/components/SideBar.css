@@ -1,9 +1,9 @@
 .sideBar{
-    flex: 0.2;
+    flex: 0.1;
     background-color:black;
     color: white;
     height: 100vh;
-    min-width: 230px;
+    /* min-width: 230px; */
    
 }
 
@@ -27,3 +27,4 @@
     font-size: 12px;
     padding: 5px;
 }
+

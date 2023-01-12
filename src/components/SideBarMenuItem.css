@@ -3,6 +3,7 @@
   align-items:center;
   color:gray;
   padding: 10px;
+  font-size: 12px;
 }
 
 .sideBar_MenuItem:hover{
@@ -12,3 +13,4 @@
     margin-left:10px;
    
 }
+

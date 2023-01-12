@@ -14,6 +14,7 @@ function App() {
     const hash = window.location.hash
     if (!token && hash) {
     const _token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1];
+    console.log("token",_token);
       window.location.hash = ""
       dispatch({
         type: "SET_TOKEN",
