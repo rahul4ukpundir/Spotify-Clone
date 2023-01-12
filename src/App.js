@@ -43,8 +43,9 @@ function App() {
       })
 
       spotify.getTrack("7dbO1k9ryxPFJG0fvYBffu").then(response =>{
-       console.log("response", response)
+       
       })
+
     } 
   }, [])
 

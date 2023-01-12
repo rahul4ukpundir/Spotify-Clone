@@ -1,17 +1,27 @@
 .footer {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
     height: 50px;
     color: white;
     width: 100%;
     padding: 20px;
     background-color: #282828;
-    display: flex;
+    display: flex; */
+    display: none;
 
 }
 
+.footerForMP3 {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+    display: flex;
 
-
+}
 
 .footer_left {
     flex: .4;
@@ -48,19 +58,28 @@
     color: gray;
 }
 
-.footer-sidebar{
-    display: none;
-}
+
 
 @media (max-width: 468px) {
     .footer {
+        position: fixed;
+        bottom: 0;
+        color: white;
+        display: block;
         width: 100%;
         padding: 10px;
         background-color: #282828;
-        display: flex;
+        height: 30px;;
+    
+    }
+    .footerForMP3 {
+        bottom: 80px;
         height: 20px;
+        color: white;
+        width: 100%;
 
     }
+ 
     .footer_left{
         flex: 0;
         display: none;
@@ -80,15 +99,4 @@
         height: 40px !important;
     }
    
-    .footerForMP3 {
-        position: fixed;
-        bottom: 50px;
-        height: 20px;
-        color: white;
-        width: 100%;
-        padding: 20px;
-        background-color: black;
-        display: flex;
-    
-    }
 }
